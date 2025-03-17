@@ -131,9 +131,11 @@
   <ItemGroup>
     <ClCompile Include="list.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="tasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="list.h" />
+    <ClInclude Include="tasks.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
