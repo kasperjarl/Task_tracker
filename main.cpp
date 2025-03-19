@@ -12,9 +12,22 @@ int main()
 
 	Task test{1, 2, 3, "description", "createdAt", "UpdatedAt"};
 
-	std::cout << "Task id: " << test.id << std::endl;
+	std::cout << "Task" << " has adrr: " << &test << std::endl;
+	std::cout << "Task id: " << test.id << " has adrr: " << &test.id << std::endl;
+	std::cout << "Task status: " << test.status << " has adrr: " << &test.status << std::endl;
+	std::cout << "Task priority: " << test.priority << " has adrr: " << &test.priority << std::endl;
+	std::cout << "Task status: " << test.description << " has adrr: " << &test.description << std::endl;
+	std::cout << "Task status: " << test.createdAt << " has adrr: " << &test.createdAt << std::endl;
+	std::cout << "Task status: " << test.updatedAt << " has adrr: " << &test.updatedAt << std::endl;
+	
+	
 
-	list.vector.insert(&test);
+	list.vector.push_back((unsigned long long) &test);
+
+	std::cout << "Looking inside list and finds task: " << list.vector[0] << std::endl;
+	
+	// next: learn about References, Pointers and smart pointers
+
 
 	return 0;
 }
